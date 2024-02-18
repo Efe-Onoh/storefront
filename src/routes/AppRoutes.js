@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import customTheme from "../theme/AppTheme";
 import AppLayout from "../pages/AppLayout";
 import { ThemeProvider } from "@emotion/react";
@@ -12,12 +12,14 @@ function AppRoutes(){
     return(
         <ThemeProvider theme={customTheme}>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <Routes>
-                <Route path="/" element={<AppLayout/>}>
-                    <Route index element={<LandingPage/>}/>
-                    <Route path="devices" element={<DeviceManagement/>}/>
-                </Route>
-            </Routes>
+            <HashRouter>
+                <Routes>
+                    <Route path="/" element={<AppLayout/>}>
+                        <Route index element={<LandingPage/>}/>
+                        <Route path="devices" element={<DeviceManagement/>}/>
+                    </Route>
+                </Routes>
+            </HashRouter>
             </LocalizationProvider>
         </ThemeProvider>
     )
