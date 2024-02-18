@@ -1,7 +1,7 @@
 {
   "name": "storefront",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/storefront",
+  "homepage": "https://efe-onoh.github.io/storefront",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
