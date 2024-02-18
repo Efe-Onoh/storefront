@@ -76,7 +76,7 @@ const AdsArray = [SpecialOffers, Recommendations, ShopByConditions]
     <Grid className="landingPageBody">
       <Header/>
       <Banner/>
-      {AdsArray.map((Ad,index)=>(<ProductList SideBarAd={Ad}/>))}
+      {AdsArray.map((Ad,index)=>(<ProductList key={index} SideBarAd={Ad}/>))}
       <BlogPosts/>
       <Footer />
     </Grid>

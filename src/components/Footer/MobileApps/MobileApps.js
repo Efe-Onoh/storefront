@@ -17,8 +17,8 @@ function MobileApps({width=170, height=70, size}) {
 
   return (
     <Grid container>
-      {appstore.map((item) => {
-        return <Grid item><MobileImages key={item.name} name={item.name} icon={item.icon} /></Grid>;
+      {appstore.map((item, index) => {
+        return <Grid key={index} item><MobileImages key={item.name} name={item.name} icon={item.icon} /></Grid>;
       })}
     </Grid>
   );

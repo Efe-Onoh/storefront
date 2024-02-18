@@ -20,7 +20,7 @@ function Nav() {
             <OffpageSlider 
                 customClassName={"clientReviewSlider"} 
                 items={headerNav.map((item,index)=>(
-                    <Grid item xs={1}>
+                    <Grid key={index}item xs={1}>
                         <Grid container direction={"column"} alignItems={"center"}>
                             <Grid item>{item.icon}</Grid>
                             <Grid item><Typography variant="ManropeBold12">{item.label}{item.dropdown ? <KeyboardArrowDown/> : ""}</Typography></Grid>
@@ -41,7 +41,8 @@ function Nav() {
     <Grid className="nav" item>
     <Grid container columnGap={2} justifyContent={"center"}>
         {headerNav.map((item,index)=>(
-            <Grid item xs={1}>
+            <Grid key={index} item xs={1}>
+                
                 <Grid container direction={"column"} alignItems={"center"}>
                     <Grid item>{item.icon}</Grid>
                     <Grid item><Typography variant="ManropeBold12">{item.label}{item.dropdown ? <KeyboardArrowDown/> : ""}</Typography></Grid>

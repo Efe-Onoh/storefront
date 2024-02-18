@@ -74,14 +74,15 @@ function Footer() {
         <Container>
           <Grid container>
             {items.map((item, id) => (
-              <Grid item xs={6} md={2} key={id}>
+              <Grid key={id} item xs={6} md={2}>
                 <Grid container direction={"column"} rowGap={2}>
                     <Grid item>
                         <Typography variant="ManropeRegular12">{item.name}</Typography>
                     </Grid>
                     {item.items? item.items.map((i, index)=>{
                         return( 
-                        <Grid item>
+                        <Grid key={index} item>
+                          
                             <Typography variant="ManropeRegular12">{i.name}</Typography>
                         </Grid>)
                     }) : <Grid item><item.component/></Grid>}
