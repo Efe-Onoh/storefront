@@ -7,6 +7,7 @@ import Banner from "./Banner/Banner";
 import ProductList from "../../components/Product/ProductList";
 import { RecommendationsIcon, ShopByConditionsIcon, SpecialOffersIcon } from "../../assets/svg/General/General";
 import BlogPosts from "./BlogPosts/BlogPosts";
+import DeviceManagement from "../DeviceManagement/DeviceManagement";
 
 function LandingPage() {
   const extraSmallScreen = useMediaQuery(isExtraSmallScreens);
