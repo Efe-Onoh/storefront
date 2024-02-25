@@ -4,51 +4,51 @@ import Carousel from "../../../components/Carousel/Carousel";
 import { BackArrow, NextArrow } from "../../../assets/svg/General/General";
 
 export const bannerItems = [
-    {
-      icon: <img src={"/images/bannerimage.png"} width={"100%"} alt="banner"/>,
-      label: (
-        <>
-          Get a free
-          <br />
-          valuation
-        </>
-      ),
-      btnLabel: "Book now",
-    },
-    {
-        icon: <img src={"/images/bannerimage.png"} width={"100%"} alt="banner"/>,
-        label: (
-        <>
-          Increase
-          <br />
-          the revenue
-          <br />
-          of your
-          <br />
-          property
-        </>
-      ),
-      btnLabel: "Learn more",
-    },
-    {
-        icon: <img src={"/images/bannerimage.png"} width={"100%"} alt="banner"/>,
-        label: (
-        <>
-          Are you
-          <br />
-          relocating
-        </>
-      ),
-      btnLabel: "Get a quotation",
-    },
-  ];
-  
+  {
+    icon: <img src={"/storefront/images/bannerimage.png"} width={"100%"} alt="banner" />,
+    label: (
+      <>
+        Get a free
+        <br />
+        valuation
+      </>
+    ),
+    btnLabel: "Book now",
+  },
+  {
+    icon: <img src={"/storefront/images/bannerimage.png"} width={"100%"} alt="banner" />,
+    label: (
+      <>
+        Increase
+        <br />
+        the revenue
+        <br />
+        of your
+        <br />
+        property
+      </>
+    ),
+    btnLabel: "Learn more",
+  },
+  {
+    icon: <img src={"/storefront/images/bannerimage.png"} width={"100%"} alt="banner" />,
+    label: (
+      <>
+        Are you
+        <br />
+        relocating
+      </>
+    ),
+    btnLabel: "Get a quotation",
+  },
+];
+
 const sliderComponentsArray = bannerItems.map((item, index) => (
-    <Grid key={index} container justifyContent={"center"} alignItems={"center"} py={4}>
-      <Grid className="" item>
-        {item.icon}
-      </Grid>
+  <Grid key={index} container justifyContent={"center"} alignItems={"center"} py={4}>
+    <Grid className="" item>
+      {item.icon}
     </Grid>
+  </Grid>
 ));
 
 function Banner() {
